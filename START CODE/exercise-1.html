@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+  <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: pink;
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+      .side-margin {
+        flex-basis: 10em;
+        flex-grow: 0;
+        flex-shrink: 0;
+        height: 100vh;
+        background: pink; 
+      }
+
+      .content-area {
+        flex-grow: 1;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        
+        background: none; 
+      }
+      header,
+      footer,
+      main {
+        background: #8a8989;
+        color: rgb(7, 7, 7);
+        padding: 0;
+        display: flex;
+        flex-shrink: 0;
+      }
+
+      header,
+      footer {
+     
+        height: 100px;
+      }
+      
+      main {
+        flex-grow: 1; 
+      }
+
+      .separator {
+        flex-basis: 1em;
+        flex-shrink: 0;
+        background: greenyellow;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="side-margin"></div>
+    <div class="content-area">
+      <header>Header</header>
+      <div class="separator"></div>
+      <main>Main</main>
+      <div class="separator"></div>
+      <footer>Footer</footer>
+    </div>
+    <div class="side-margin"></div>
+  </body>
+</html>
